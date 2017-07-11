@@ -1,0 +1,101 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Survey</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content overflow-scroll="true">
+    <ion-row align-items-start>
+        <ion-col>
+          
+                    <h1>Please fill out the information below:</h1>
+                    <ion-item>
+                        <ion-label class="">Age (years)</ion-label>
+                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.age" [multiPickerColumns]="ageColumns">
+                        </ion-multi-picker>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>Race</ion-label>
+                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.race" [multiPickerColumns]="raceColumns"> </ion-multi-picker>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>PSA Level</ion-label>
+                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.psaLevel" [multiPickerColumns]="psaColumns"> </ion-multi-picker>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>Weight (lbs)</ion-label>
+                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.weight" [multiPickerColumns]="weightColumns"> </ion-multi-picker>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>Height (ft,in)</ion-label>
+                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.height" [multiPickerColumns]="heightColumns"></ion-multi-picker>
+                    </ion-item>
+               
+                    <h4>If Drug A and Drug B provided the same clinical benefit, which of the following options is more acceptable to you?</h4>
+                    <ion-list radio-group [(ngModel)]="newResponse.questionOne">
+                        <ion-item>
+                            <ion-label>4 pills of drug A taken once a day AND A steroid taken twice a day</ion-label>
+                            <ion-radio value="A"></ion-radio>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>4 pills of drug B taken once a day AND Feeling dizzy</ion-label>
+                            <ion-radio value="B"></ion-radio>
+                        </ion-item>
+                    </ion-list>
+                    <h4>Would you be interested in a shared decision making tool that allows you to share information with your provider about your goals for therapy and things that are important to you such as not feeling dizzy or not losing sleep at night with a medication?</h4>
+                    <ion-list radio-group [(ngModel)]="newResponse.questionTwo">
+                        <ion-item>
+                            <ion-label>Yes</ion-label>
+                            <ion-radio value="Yes"></ion-radio>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>No</ion-label>
+                            <ion-radio value="No"></ion-radio>
+                        </ion-item>
+                    </ion-list>
+                    <h4>What are some of the things that are most important to you about a shared decision making tool?</h4>
+                    <h5>Please check all that apply:</h5>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label>Get more information about my options for treatment</ion-label>
+                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionA"></ion-checkbox>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>Get details about side effects</ion-label>
+                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionB"></ion-checkbox>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>Get a personalized treatment plan based on my medical history and priorities (such as not fee ling dizzy, not losing sleep, not taking too many pills, etc)</ion-label>
+                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionC"></ion-checkbox>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>Share information about my priorities with my provider</ion-label>
+                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionD"></ion-checkbox>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label>Other
+                            </ion-label>
+                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionE"></ion-checkbox>
+                        </ion-item>
+                    </ion-list>
+                    <ion-item>
+                        <ion-label floating>If you checked other, please specify what other things would be important for you in a shared decision making tool?
+                        </ion-label>
+                        <ion-textarea [(ngModel)]="newResponse.comments"></ion-textarea>
+                    </ion-item>
+                    <button ion-button (click)="saveResponse()">
+                        Complete Survey
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </button>
+                
+        </ion-col>
+    </ion-row>
+    <!--
+            <ion-item>
+                <ion-label>4 pills of drug A taken once a day AND A steroid taken twice a day</ion-label>
+                <ion-checkbox color="primary"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>4 pills of drug B taken once a day AND Feeling dizzy</ion-label>
+                <ion-checkbox color="secondary"></ion-checkbox>
+            </ion-item> -->
+</ion-content>

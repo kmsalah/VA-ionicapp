@@ -8,7 +8,7 @@ import { AngularFireDatabase, FirebaseListObservable} from 'angularfire2/databas
 import { MultiPickerModule } from 'ion-multi-picker';
 
 
-import { QuizPage } from '../pages/quiz/quiz';
+import { SurveyPage } from '../pages/survey/survey';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -31,7 +31,7 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-    QuizPage,
+    SurveyPage,
     ContactPage,
     HomePage,
     TabsPage,
@@ -46,7 +46,7 @@ export const firebaseConfig = {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    QuizPage,
+    SurveyPage,
     ContactPage,
     HomePage,
     TabsPage,

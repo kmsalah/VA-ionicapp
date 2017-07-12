@@ -77,7 +77,7 @@ var ResultPage = (function () {
 ResultPage = __decorate([
     __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPage"](),
     __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({
-        selector: 'page-result',template:/*ion-inline-start:"/Users/khalidsalah/Desktop/app-master/src/pages/result/result.html"*/'<!--\n  Generated template for the ResultPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar hideBackButton color="primary">\n    <ion-title>Your Results</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list inset no-lines *ngFor  = "let item of quiz;  let i=index">\n    <h3><span class="num">{{i+1}}.</span> &nbsp;{{item.question}}</h3>\n    <div *ngIf="item.solution != item.answer">\n      <ion-item class="incorrect" >\n        <ion-icon name="radio-button-on" item-left></ion-icon>\n        {{item.answer}} was incorrect.\n      </ion-item>\n      <ion-item class="correct">\n        <ion-icon name="radio-button-off" item-left></ion-icon>\n        {{item.solution}} is the correct answer.\n      </ion-item>\n    </div>\n    <div *ngIf="item.solution == item.answer">\n      <ion-item class="correct">\n        <ion-icon name="radio-button-on" item-left></ion-icon>\n        {{item.solution}} is correct.  Great!\n      </ion-item>\n    </div>\n    <br><br>\n  </ion-list>\n  <hr class="incorrect">\n  <h1 style="margin-left:35px;" class="incorrect">Final Score: &nbsp;{{score}}%</h1>\n</ion-content>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/app-master/src/pages/result/result.html"*/,
+        selector: 'page-result',template:/*ion-inline-start:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/result/result.html"*/'<!--\n  Generated template for the ResultPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar hideBackButton color="primary">\n    <ion-title>Your Results</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list inset no-lines *ngFor  = "let item of quiz;  let i=index">\n    <h3><span class="num">{{i+1}}.</span> &nbsp;{{item.question}}</h3>\n    <div *ngIf="item.solution != item.answer">\n      <ion-item class="incorrect" >\n        <ion-icon name="radio-button-on" item-left></ion-icon>\n        {{item.answer}} was incorrect.\n      </ion-item>\n      <ion-item class="correct">\n        <ion-icon name="radio-button-off" item-left></ion-icon>\n        {{item.solution}} is the correct answer.\n      </ion-item>\n    </div>\n    <div *ngIf="item.solution == item.answer">\n      <ion-item class="correct">\n        <ion-icon name="radio-button-on" item-left></ion-icon>\n        {{item.solution}} is correct.  Great!\n      </ion-item>\n    </div>\n    <br><br>\n  </ion-list>\n  <hr class="incorrect">\n  <h1 style="margin-left:35px;" class="incorrect">Final Score: &nbsp;{{score}}%</h1>\n</ion-content>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/result/result.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"]])
 ], ResultPage);
@@ -86,17 +86,15 @@ ResultPage = __decorate([
 
 /***/ }),
 
-/***/ 47:
+/***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
-// CONCATENATED MODULE: ./src/pages/quiz/quiz.ts
+// CONCATENATED MODULE: ./src/pages/contact/contact.ts
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(43);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -108,10 +106,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+var ContactPage = (function () {
+    function ContactPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return ContactPage;
+}());
+ContactPage = __decorate([
+    __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({
+        selector: 'page-contact',template:/*ion-inline-start:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/contact/contact.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Contact</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <ion-list>\n        <ion-list-header class="lab_dir">HeRC Lab Director</ion-list-header>\n        <br>\n        <ion-item>\n            <ion-icon name="school" item-left></ion-icon>\n            Dr. Jason D. Bakos\n        </ion-item>\n        <ion-item>\n            <ion-icon name="navigate" item-left></ion-icon>\n            University of South Carolina\n            <br>\n            <p>\n                College of Engineering and Computing\n                <br> Office: Swearingen 3A45\n            </p>\n        </ion-item>\n        <ion-item>\n            <ion-icon name="call" item-left></ion-icon>\n            (803) 777-8627\n        </ion-item>\n        <ion-item>\n            <ion-icon name="mail" item-left></ion-icon>\n            <a href="mailto:jbakos@cse.sc.edu">jbakos@cse.sc.edu</a>\n        </ion-item>\n        <ion-item>\n            <ion-icon name="bookmark" item-left></ion-icon>\n            <a href="https://www.cse.sc.edu/~jbakos">www.cse.sc.edu/~jbakos</a>\n        </ion-item>\n        <ion-list>\n            <ion-list-header class="lab_dir">Developer</ion-list-header>\n            <br>\n            <ion-item>\n                <ion-icon name="school" item-left></ion-icon>\n                Khalid Salah\n            </ion-item>\n            <ion-item>\n                <ion-icon name="navigate" item-left></ion-icon>\n                University of South Carolina\n                <br>\n                <p>\n                    College of Engineering and Computing\n                    <br>\n                </p>\n            </ion-item>\n            <ion-item>\n                <ion-icon name="mail" item-left></ion-icon>\n                <a href="mailto:ksalah@email.sc.edu">ksalah@email.sc.edu</a>\n            </ion-item>\n        </ion-list>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/contact/contact.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"]])
+], ContactPage);
+
+//# sourceMappingURL=contact.js.map
+// CONCATENATED MODULE: ./src/pages/survey/survey.ts
+/* harmony import */ var survey___WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var survey___WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(43);
+var survey___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var survey___metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 
-var QuizPage = (function () {
-    function QuizPage(navCtrl, db, afAuth) {
+
+
+var SurveyPage = (function () {
+    function SurveyPage(navCtrl, db, afAuth) {
         this.navCtrl = navCtrl;
         this.newResponse = {
             age: 0,
@@ -873,49 +901,21 @@ var QuizPage = (function () {
         this.responses = db.list('/Responses'); //grabbing the responses object from firebase
         afAuth.authState; //a requirement for firebase 
     } // end_constructor
-    QuizPage.prototype.saveResponse = function () {
+    SurveyPage.prototype.saveResponse = function () {
         console.log("sending response to firebase");
         this.responses.push(this.newResponse); //this pushes the new response to the database
+        this.navCtrl.pop();
     };
-    return QuizPage;
+    return SurveyPage;
 }());
-QuizPage = __decorate([
-    __WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({
-        selector: 'page-quiz',template:/*ion-inline-start:"/Users/khalidsalah/Desktop/app-master/src/pages/quiz/quiz.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Survey</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content overflow-scroll="true">\n    <ion-row align-items-start>\n        <ion-col>\n          \n                    <h1>Please fill out the information below:</h1>\n                    <ion-item>\n                        <ion-label class="">Age (years)</ion-label>\n                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.age" [multiPickerColumns]="ageColumns">\n                        </ion-multi-picker>\n                    </ion-item>\n                    <ion-item>\n                        <ion-label>Race</ion-label>\n                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.race" [multiPickerColumns]="raceColumns"> </ion-multi-picker>\n                    </ion-item>\n                    <ion-item>\n                        <ion-label>PSA Level</ion-label>\n                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.psaLevel" [multiPickerColumns]="psaColumns"> </ion-multi-picker>\n                    </ion-item>\n                    <ion-item>\n                        <ion-label>Weight (lbs)</ion-label>\n                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.weight" [multiPickerColumns]="weightColumns"> </ion-multi-picker>\n                    </ion-item>\n                    <ion-item>\n                        <ion-label>Height (ft,in)</ion-label>\n                        <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.height" [multiPickerColumns]="heightColumns"></ion-multi-picker>\n                    </ion-item>\n               \n                    <h4>If Drug A and Drug B provided the same clinical benefit, which of the following options is more acceptable to you?</h4>\n                    <ion-list radio-group [(ngModel)]="newResponse.questionOne">\n                        <ion-item>\n                            <ion-label>4 pills of drug A taken once a day AND A steroid taken twice a day</ion-label>\n                            <ion-radio value="A"></ion-radio>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>4 pills of drug B taken once a day AND Feeling dizzy</ion-label>\n                            <ion-radio value="B"></ion-radio>\n                        </ion-item>\n                    </ion-list>\n                    <h4>Would you be interested in a shared decision making tool that allows you to share information with your provider about your goals for therapy and things that are important to you such as not feeling dizzy or not losing sleep at night with a medication?</h4>\n                    <ion-list radio-group [(ngModel)]="newResponse.questionTwo">\n                        <ion-item>\n                            <ion-label>Yes</ion-label>\n                            <ion-radio value="Yes"></ion-radio>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>No</ion-label>\n                            <ion-radio value="No"></ion-radio>\n                        </ion-item>\n                    </ion-list>\n                    <h4>What are some of the things that are most important to you about a shared decision making tool?</h4>\n                    <h5>Please check all that apply:</h5>\n                    <ion-list>\n                        <ion-item>\n                            <ion-label>Get more information about my options for treatment</ion-label>\n                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionA"></ion-checkbox>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>Get details about side effects</ion-label>\n                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionB"></ion-checkbox>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>Get a personalized treatment plan based on my medical history and priorities (such as not fee ling dizzy, not losing sleep, not taking too many pills, etc)</ion-label>\n                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionC"></ion-checkbox>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>Share information about my priorities with my provider</ion-label>\n                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionD"></ion-checkbox>\n                        </ion-item>\n                        <ion-item>\n                            <ion-label>Other\n                            </ion-label>\n                            <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionE"></ion-checkbox>\n                        </ion-item>\n                    </ion-list>\n                    <ion-item>\n                        <ion-label floating>If you checked other, please specify what other things would be important for you in a shared decision making tool?\n                        </ion-label>\n                        <ion-textarea [(ngModel)]="newResponse.comments"></ion-textarea>\n                    </ion-item>\n                    <button ion-button (click)="saveResponse()">\n                        Complete Survey\n                        <ion-icon name="checkmark-circle-outline"></ion-icon>\n                    </button>\n                \n        </ion-col>\n    </ion-row>\n    <!--\n            <ion-item>\n                <ion-label>4 pills of drug A taken once a day AND A steroid taken twice a day</ion-label>\n                <ion-checkbox color="primary"></ion-checkbox>\n            </ion-item>\n            <ion-item>\n                <ion-label>4 pills of drug B taken once a day AND Feeling dizzy</ion-label>\n                <ion-checkbox color="secondary"></ion-checkbox>\n            </ion-item> -->\n</ion-content>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/app-master/src/pages/quiz/quiz.html"*/
+SurveyPage = survey___decorate([
+    survey___WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({
+        selector: 'page-survey',template:/*ion-inline-start:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/survey/survey.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Survey</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content overflow-scroll="true">\n    <ion-row align-items-start>\n        <ion-col>\n            <h1>Please fill out the information below:</h1>\n            <ion-item>\n                <ion-label class="">Age (years)</ion-label>\n                <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.age" [multiPickerColumns]="ageColumns">\n                </ion-multi-picker>\n            </ion-item>\n            <ion-item>\n                <ion-label>Race</ion-label>\n                <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.race" [multiPickerColumns]="raceColumns"> </ion-multi-picker>\n            </ion-item>\n            <ion-item>\n                <ion-label>PSA Level</ion-label>\n                <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.psaLevel" [multiPickerColumns]="psaColumns"> </ion-multi-picker>\n            </ion-item>\n            <ion-item>\n                <ion-label>Weight (lbs)</ion-label>\n                <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.weight" [multiPickerColumns]="weightColumns"> </ion-multi-picker>\n            </ion-item>\n            <ion-item>\n                <ion-label>Height (ft,in)</ion-label>\n                <ion-multi-picker item-content placeholder="-" [(ngModel)]="newResponse.height" [multiPickerColumns]="heightColumns"></ion-multi-picker>\n            </ion-item>\n            <h4>If Drug A and Drug B provided the same clinical benefit, which of the following options is more acceptable to you?</h4>\n            <ion-list radio-group [(ngModel)]="newResponse.questionOne">\n                <ion-item>\n                    <ion-label>4 pills of drug A taken once a day AND A steroid taken twice a day</ion-label>\n                    <ion-radio value="A"></ion-radio>\n                </ion-item>\n                <ion-item>\n                    <ion-label>4 pills of drug B taken once a day AND Feeling dizzy</ion-label>\n                    <ion-radio value="B"></ion-radio>\n                </ion-item>\n            </ion-list>\n            <h4>Would you be interested in a shared decision making tool that allows you to share information with your provider about your goals for therapy and things that are important to you such as not feeling dizzy or not losing sleep at night with a medication?</h4>\n            <ion-list radio-group [(ngModel)]="newResponse.questionTwo">\n                <ion-item>\n                    <ion-label>Yes</ion-label>\n                    <ion-radio value="Yes"></ion-radio>\n                </ion-item>\n                <ion-item>\n                    <ion-label>No</ion-label>\n                    <ion-radio value="No"></ion-radio>\n                </ion-item>\n            </ion-list>\n            <h4>What are some of the things that are most important to you about a shared decision making tool?</h4>\n            <h5>Please check all that apply:</h5>\n            <ion-list>\n                <ion-item>\n                    <ion-label>Get more information about my options for treatment</ion-label>\n                    <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionA"></ion-checkbox>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Get details about side effects</ion-label>\n                    <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionB"></ion-checkbox>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Get a personalized treatment plan based on my medical history and priorities (such as not fee ling dizzy, not losing sleep, not taking too many pills, etc)</ion-label>\n                    <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionC"></ion-checkbox>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Share information about my priorities with my provider</ion-label>\n                    <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionD"></ion-checkbox>\n                </ion-item>\n                <ion-item>\n                    <ion-label>Other\n                    </ion-label>\n                    <ion-checkbox color="primary" [(ngModel)]="newResponse.questionThree.optionE"></ion-checkbox>\n                </ion-item>\n            </ion-list>\n            <ion-item>\n                <ion-label floating>If you checked other, please specify what other things would be important for you in a shared decision making tool?\n                </ion-label>\n                <ion-textarea [(ngModel)]="newResponse.comments"></ion-textarea>\n            </ion-item>\n            <button ion-button (click)="saveResponse()">\n                Complete Survey\n                <ion-icon name="checkmark-circle-outline"></ion-icon>\n            </button>\n        </ion-col>\n    </ion-row>\n    <!--\n            <ion-item>\n                <ion-label>4 pills of drug A taken once a day AND A steroid taken twice a day</ion-label>\n                <ion-checkbox color="primary"></ion-checkbox>\n            </ion-item>\n            <ion-item>\n                <ion-label>4 pills of drug B taken once a day AND Feeling dizzy</ion-label>\n                <ion-checkbox color="secondary"></ion-checkbox>\n            </ion-item> -->\n</ion-content>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/survey/survey.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */]) === "function" && _c || Object])
-], QuizPage);
+    survey___metadata("design:paramtypes", [survey___WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */], __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */]])
+], SurveyPage);
 
-var _a, _b, _c;
-//# sourceMappingURL=quiz.js.map
-// CONCATENATED MODULE: ./src/pages/contact/contact.ts
-/* harmony import */ var contact___WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var contact___WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
-var contact___decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var contact___metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ContactPage = (function () {
-    function ContactPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    return ContactPage;
-}());
-ContactPage = contact___decorate([
-    contact___WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({
-        selector: 'page-contact',template:/*ion-inline-start:"/Users/khalidsalah/Desktop/app-master/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Contact</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header class="lab_dir">HeRC Lab Director</ion-list-header>\n    <br>\n\n    <ion-item>\n      <ion-icon name="school" item-left></ion-icon>\n      Dr. Jason D. Bakos\n    </ion-item>\n\n\n    <ion-item>\n      <ion-icon name="navigate" item-left></ion-icon>\n       University of South Carolina<br>\n       <p>\n         College of Engineering and Computing<br>\n         Office: Swearingen 3A45\n       </p>\n    </ion-item>\n\n\n    <ion-item>\n      <ion-icon name="call" item-left></ion-icon>\n      (803) 777-8627\n    </ion-item>\n\n\n    <ion-item>\n      <ion-icon name="mail" item-left></ion-icon>\n      <a href="mailto:jbakos@cse.sc.edu">jbakos@cse.sc.edu</a>\n    </ion-item>\n\n\n    <ion-item>\n      <ion-icon name="bookmark" item-left></ion-icon>\n      <a href="https://www.cse.sc.edu/~jbakos">www.cse.sc.edu/~jbakos</a>\n    </ion-item>\n\n\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/app-master/src/pages/contact/contact.html"*/
-    }),
-    contact___metadata("design:paramtypes", [contact___WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"]])
-], ContactPage);
-
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=survey.js.map
 // CONCATENATED MODULE: ./src/pages/home/home.ts
 /* harmony import */ var home___WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var home___WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(3);
@@ -930,18 +930,22 @@ var home___metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var HomePage = (function () {
+
+var home_HomePage = (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
+    HomePage.prototype.takeSurvey = function () {
+        this.navCtrl.push(SurveyPage);
+    };
     return HomePage;
 }());
-HomePage = home___decorate([
+home_HomePage = home___decorate([
     home___WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({
-        selector: 'page-home',template:/*ion-inline-start:"/Users/khalidsalah/Desktop/app-master/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Welcome to HeRC!</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-slides autoplay="9500"\n              speed="500"\n              loop="true"\n              spaceBetween="200"\n              pager>\n\n    <ion-slide>\n      <img class="herc" src="/assets/img/logo.jpg">\n      <h3>Heterogeneous and<br>Reconfigurable Computing</h3>\n    </ion-slide>\n\n\n    <ion-slide>\n      <img src="/assets/img/mission.jpg">\n      <p>\n         Our mission is to develop new technologies that establish the\n         best practical implementation of special-purpose processing and other\n         emerging technologies for use in the fields of scientific and real-time\n         embedded computing.\n      </p>\n    </ion-slide>\n\n\n    <ion-slide>\n      <img src="/assets/img/ionic.png">\n      <p>\n         Ionic is an open-source software development kit featuring\n         hybrid app development for Android and iPhone.\n         <br><br>\n         This quiz app has been developed as a proof of concept and to further\n         analyize the abilities of the Ionic moble-app framework.\n      </p>\n    </ion-slide>\n\n\n  </ion-slides>\n</ion-content>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/app-master/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/home/home.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>HeRC NSF Proposal Survey App</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content padding>\n    <!--\n  <ion-slides autoplay="9500"\n              speed="500"\n              loop="true"\n              spaceBetween="200"\n              pager>\n\n    <ion-slide>\n      <img class="herc" src="/assets/img/logo.jpg">\n      <h3>Heterogeneous and<br>Reconfigurable Computing</h3>\n    </ion-slide>\n\n\n    <ion-slide>\n      <img src="/assets/img/mission.jpg">\n      <p>\n         Our mission is to develop new technologies that establish the\n         best practical implementation of special-purpose processing and other\n         emerging technologies for use in the fields of scientific and real-time\n         embedded computing.\n      </p>\n    </ion-slide>\n\n\n    <ion-slide>\n      <img src="/assets/img/ionic.png">\n      <p>\n         Ionic is an open-source software development kit featuring\n         hybrid app development for Android and iPhone.\n         <br><br>\n         This quiz app has been developed as a proof of concept and to further\n         analyize the abilities of the Ionic moble-app framework.\n      </p>\n    </ion-slide>\n\n\n  </ion-slides> -->\n  <ion-row>\n  <ion-col>\n    <h1>Heterogenous and <br>Reconfigurable Computing </h1>\n     <img class="herc" src="/assets/img/logo.jpg">\n    <p> Our mission is to develop new technologies that establish the best practical implementation of special-purpose processing and other emerging technologies for use in the fields of scientific and real-time embedded computing. This is a proposal Ionic application for a <strong> Shared Decision Making (SDM) tool for Advanced Prostate Cancer (aPCa) </strong></p>\n    \n    <button ion-button color="primary" outline large (click)="takeSurvey()">Take the survey</button>\n    </ion-col>\n    </ion-row>\n</ion-content>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/home/home.html"*/
     }),
     home___metadata("design:paramtypes", [home___WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"]])
-], HomePage);
+], home_HomePage);
 
 //# sourceMappingURL=home.js.map
 // CONCATENATED MODULE: ./src/pages/tabs/tabs.ts
@@ -958,17 +962,15 @@ var tabs___metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var tabs_TabsPage = (function () {
     function TabsPage() {
-        this.tab1Root = HomePage;
-        this.tab2Root = QuizPage;
-        this.tab3Root = ContactPage;
+        this.tab1Root = home_HomePage;
+        this.tab2Root = ContactPage;
     }
     return TabsPage;
 }());
 tabs_TabsPage = tabs___decorate([
-    tabs___WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({template:/*ion-inline-start:"/Users/khalidsalah/Desktop/app-master/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Quiz" tabIcon="help-circle"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/app-master/src/pages/tabs/tabs.html"*/
+    tabs___WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({template:/*ion-inline-start:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/VA-ionicapp/src/pages/tabs/tabs.html"*/
     }),
     tabs___metadata("design:paramtypes", [])
 ], tabs_TabsPage);
@@ -1006,7 +1008,7 @@ var app_component_MyApp = (function () {
     return MyApp;
 }());
 app_component_MyApp = app_component___decorate([
-    app_component___WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({template:/*ion-inline-start:"/Users/khalidsalah/Desktop/app-master/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/app-master/src/app/app.html"*/
+    app_component___WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"]({template:/*ion-inline-start:"/Users/khalidsalah/Desktop/VA-ionicapp/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/khalidsalah/Desktop/VA-ionicapp/src/app/app.html"*/
     }),
     app_component___metadata("design:paramtypes", [app_component___WEBPACK_IMPORTED_MODULE_1_ionic_angular__["Platform"], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], app_component_MyApp);
@@ -1062,9 +1064,9 @@ AppModule = app_module___decorate([
     app_module___WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"]({
         declarations: [
             app_component_MyApp,
-            QuizPage,
+            SurveyPage,
             ContactPage,
-            HomePage,
+            home_HomePage,
             tabs_TabsPage,
             __WEBPACK_IMPORTED_MODULE_12__pages_result_result__["a" /* ResultPage */]
         ],
@@ -1081,9 +1083,9 @@ AppModule = app_module___decorate([
         bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["IonicApp"]],
         entryComponents: [
             app_component_MyApp,
-            QuizPage,
+            SurveyPage,
             ContactPage,
-            HomePage,
+            home_HomePage,
             tabs_TabsPage,
             __WEBPACK_IMPORTED_MODULE_12__pages_result_result__["a" /* ResultPage */]
         ],
@@ -1107,5 +1109,5 @@ __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformB
 
 /***/ })
 
-},[47]);
+},[95]);
 //# sourceMappingURL=main.js.map

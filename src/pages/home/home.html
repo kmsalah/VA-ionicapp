@@ -1,11 +1,10 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>Welcome to HeRC!</ion-title>
-  </ion-navbar>
+    <ion-navbar color="primary">
+        <ion-title>HeRC NSF Proposal Survey App</ion-title>
+    </ion-navbar>
 </ion-header>
-
 <ion-content padding>
-
+    <!--
   <ion-slides autoplay="9500"
               speed="500"
               loop="true"
@@ -41,5 +40,14 @@
     </ion-slide>
 
 
-  </ion-slides>
+  </ion-slides> -->
+  <ion-row>
+  <ion-col>
+    <h1>Heterogenous and <br>Reconfigurable Computing </h1>
+     <img class="herc" src="/assets/img/logo.jpg">
+    <p> Our mission is to develop new technologies that establish the best practical implementation of special-purpose processing and other emerging technologies for use in the fields of scientific and real-time embedded computing. This is a proposal Ionic application for a <strong> Shared Decision Making (SDM) tool for Advanced Prostate Cancer (aPCa) </strong></p>
+    
+    <button ion-button color="primary" outline large (click)="takeSurvey()">Take the survey</button>
+    </ion-col>
+    </ion-row>
 </ion-content>

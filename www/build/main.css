@@ -25078,8 +25078,13 @@ page-home p {
   border-right: 3px solid #488aff;
 }
 
-page-quiz .slide-zoom {
-  height: 100%;
+page-home .row .col {
+  text-align: center;
+}
+
+page-home button {
+  position: relative;
+  top: 50px;
 }
 
 page-result .num {

@@ -1,0 +1,34 @@
+<ion-header>
+</ion-header>
+<ion-content>
+    <div class="header">
+        <h4>If Drug A and Drug B provided the same clinical benefit, which of the following options is more acceptable to you?</h4>
+    </div>
+    <ion-list radio-group [(ngModel)]="questionOne">
+        <ion-row>
+            <ion-col>
+                <ion-item text-center class="question">
+                    <ion-label>4 pills of drug A taken once a day
+                        <br> AND
+                        <br> A steroid taken twice a day</ion-label>
+                    <br>
+                    <ion-radio mode="md" value="A"></ion-radio>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item text-center class="question">
+                    <ion-label>4 pills of drug B taken once a day
+                        <br> AND
+                        <br> Feeling dizzy</ion-label>
+                    <br>
+                    <ion-radio mode="md" value="B"></ion-radio>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-list>
+    <ion-item text-center class="button-next">
+        <button  ion-button (click)="saveQuestionInfo()">
+            <ion-icon ios="ios-arrow-dropright" md="ios-arrow-dropright"></ion-icon>
+        </button>
+    </ion-item>
+</ion-content>

@@ -1,8 +1,15 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ResultPage } from '../result/result';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database';
+
+import { DiagnosisPage } from '../diagnosis/diagnosis';
+import { SituationPage } from '../situation/situation';
+import { PrioritiesPage } from '../priorities/priorities';
+import { TreatmentPage } from '../treatment/treatment';
+import { HomePage } from '../home/home';
+
+import { StatusBar } from '@ionic-native/status-bar';
 
 
 @Component({
@@ -12,8 +19,14 @@ import { AngularFireDatabase, FirebaseListObservable} from 'angularfire2/databas
 
 export class SurveyPage{
 
-   //private races = ["Asian / Pacific Islander", "Black or African American", "White", "Native American or American Indian", "Hispanic or Latino", "Other"];
+tab1Root: any = DiagnosisPage;
+tab2Root: any = SituationPage;
+tab3Root: any = PrioritiesPage;
+tab4Root: any = TreatmentPage;
 
+
+   //private races = ["Asian / Pacific Islander", "Black or African American", "White", "Native American or American Indian", "Hispanic or Latino", "Other"];
+/*
   responses: FirebaseListObservable<any[]>;
   private ageColumns:any;
   private psaColumns:any;
@@ -40,9 +53,10 @@ export class SurveyPage{
     },
     comments: ''
   }; 
+*/
+  constructor( public navCtrl: NavController, db: AngularFireDatabase, afAuth: AngularFireAuth, private statusBar: StatusBar){
 
-  constructor( public navCtrl: NavController, db: AngularFireDatabase, afAuth: AngularFireAuth){
-
+/*
     this.raceColumns = [
 
     {
@@ -790,16 +804,19 @@ export class SurveyPage{
 ];
 
     this.responses = db.list('/Responses'); //grabbing the responses object from firebase
-    afAuth.authState; //a requirement for firebase 
-  } // end_constructor
+    afAuth.authState; //a requirement for firebase */
+ } // end_constructor
 
-
+/*
 saveResponse()
 {
   console.log("sending response to firebase");
   this.responses.push(this.newResponse); //this pushes the new response to the database
   this.navCtrl.pop();
 }
-
-  
+*/
+popPage()
+{
+  this.navCtrl.pop();
+}  
 } 

@@ -1,0 +1,67 @@
+page-diagnosis
+{
+	
+ion-multi-picker 
+{
+	background-color:#6E7889;
+	color: #F3b54a;
+}
+
+.label-picker
+{
+	background-color: #6E7889;
+}
+
+.button-next
+{
+	background-color: #393b45; //bar that button is in
+}
+
+.item-md .item-button, .item-ios .item-button
+{
+	height: 80px;
+	width: 300px;
+	font-size: 3rem;
+	background: #F3B54A; //beige
+
+}
+
+ion-icon {
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+}
+
+.item-block
+{
+	min-height: 8rem;
+	font-weight: bold;
+}
+
+
+ion-label
+{
+	font-size: 2.5rem;
+	color: white;
+}
+
+h1
+{	
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	color: #393b45;
+}
+
+.content-md, .content-ios
+{
+	background-color: #d8d9de;
+}
+
+ion-row, ion-col
+{
+	background: #bccad6;
+}
+
+}

@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,3 +12,68 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.tabs-ios .tabbar, .tabs-md .tabber
+{
+    background-color: #393b45;
+}
+
+
+.tabs-md .tab-button[aria-selected=true] {
+    color: black;
+    background:  #F3b54a; //yellow
+    /* your background color*/
+    font-weight: bolder;
+    font-family: "Century Gothic", "Avenir Next", "Helvetica";
+    font-size: 2rem;
+}
+
+.tabs-md .tab-button {
+    min-height: 10.6rem;
+    font-weight: bold;
+    font-family: "Century Gothic" , "Avenir Next", "Helvetica";
+    padding: 0;
+    border-left: 1px;
+    border-right: 1px;
+    background:#393b45;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.tabs-md .tab-button-text {
+    font-size: 2.3rem;
+    font-family: "Century Gothic", "Avenir Next", "Helvetica";
+    font-weight: bold;
+}
+
+.tabs-ios .tab-button[aria-selected=true] {
+    color: white;
+    background:  #F3b54a; 
+    /* your background color*/
+    font-weight: bolder;
+    font-family: "Helvetica";
+    font-size: 2rem;
+}
+
+.tabs-ios .tab-button {
+    min-height: 10.6rem;
+    font-weight: bold;
+    font-family: "Century Gothic", "Avenir Next", "Helvetica";
+    padding: 0;
+    border-left: 1px;
+    border-right: 1px;
+    background: #393b45;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.tabs-ios .tab-button-text {
+    font-size: 2.8rem;
+    font-family: "Century Gothic", "Avenir Next", "Helvetica";
+    font-weight: bold;
+}
+
+.tabs-ios[tabsLayout=icon-hide] .tab-button,
+.tabs-ios .tab-button.has-title-only {
+    min-height: 120px;
+}

@@ -1,9 +1,8 @@
 <ion-header>
-    <ion-navbar color="primary">
-        <ion-title>Survey</ion-title>
-    </ion-navbar>
 </ion-header>
 <ion-content overflow-scroll="true">
+<div class="topbar"> </div>
+    <!--
     <ion-row align-items-start>
         <ion-col>
             <h1>Please fill out the information below:</h1>
@@ -30,14 +29,20 @@
             </ion-item>
             <h4>If Drug A and Drug B provided the same clinical benefit, which of the following options is more acceptable to you?</h4>
             <ion-list radio-group [(ngModel)]="newResponse.questionOne">
-                <ion-item>
-                    <ion-label>4 pills of drug A taken once a day AND A steroid taken twice a day</ion-label>
-                    <ion-radio value="A"></ion-radio>
-                </ion-item>
-                <ion-item>
-                    <ion-label>4 pills of drug B taken once a day AND Feeling dizzy</ion-label>
-                    <ion-radio value="B"></ion-radio>
-                </ion-item>
+                <ion-row>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>4 pills of drug A taken once a day AND A steroid taken twice a day</ion-label>
+                            <ion-radio value="A"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-label>4 pills of drug B taken once a day AND Feeling dizzy</ion-label>
+                            <ion-radio value="B"></ion-radio>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
             </ion-list>
             <h4>Would you be interested in a shared decision making tool that allows you to share information with your provider about your goals for therapy and things that are important to you such as not feeling dizzy or not losing sleep at night with a medication?</h4>
             <ion-list radio-group [(ngModel)]="newResponse.questionTwo">
@@ -86,6 +91,7 @@
             </button>
         </ion-col>
     </ion-row>
+    -->
     <!--
             <ion-item>
                 <ion-label>4 pills of drug A taken once a day AND A steroid taken twice a day</ion-label>
@@ -95,4 +101,10 @@
                 <ion-label>4 pills of drug B taken once a day AND Feeling dizzy</ion-label>
                 <ion-checkbox color="secondary"></ion-checkbox>
             </ion-item> -->
+    <ion-tabs  tabs-striped tabs-color-positive tabsPlacement="top">
+        <ion-tab [root]="tab1Root" tabTitle="Your Diagnosis"></ion-tab>
+        <ion-tab [root]="tab2Root" tabTitle="Your Situation"></ion-tab>
+        <ion-tab [root]="tab3Root" tabTitle="Your Priorities"></ion-tab>
+        <ion-tab [root]="tab4Root" tabTitle="Your Treatment"></ion-tab>
+    </ion-tabs>
 </ion-content>

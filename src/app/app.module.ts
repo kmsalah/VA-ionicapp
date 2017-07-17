@@ -12,11 +12,16 @@ import { SurveyPage } from '../pages/survey/survey';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { ResultPage } from '../pages/result/result';
+import { DiagnosisPage } from '../pages/diagnosis/diagnosis';
+import { SituationPage } from '../pages/situation/situation';
+import { PrioritiesPage } from '../pages/priorities/priorities';
+import { TreatmentPage } from '../pages/treatment/treatment';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+
+import { ResponseService } from '../providers/response-service';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyAMQ-49Y8Pdr4E4e-CzJVujTZN5L231I7Y",
@@ -35,7 +40,11 @@ export const firebaseConfig = {
     ContactPage,
     HomePage,
     TabsPage,
-    ResultPage
+    
+    DiagnosisPage,
+    SituationPage,
+    PrioritiesPage,
+    TreatmentPage
   ],
   imports: [
     BrowserModule,
@@ -50,14 +59,19 @@ export const firebaseConfig = {
     ContactPage,
     HomePage,
     TabsPage,
-    ResultPage
+    
+    DiagnosisPage,
+    SituationPage,
+    PrioritiesPage,
+    TreatmentPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AngularFireDatabase,
-    AngularFireAuth
+    AngularFireAuth,
+    ResponseService
   ]
 })
 export class AppModule {}

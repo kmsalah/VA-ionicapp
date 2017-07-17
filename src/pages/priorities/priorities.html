@@ -1,0 +1,30 @@
+<ion-header>
+</ion-header>
+<ion-content>
+    <div class="header">
+        <h4>Would you be interested in a shared decision making tool that allows you to share information with your provider about your goals for therapy and things that are important to you such as not feeling dizzy or not losing sleep at night with a medication?</h4>
+    </div>
+    <ion-list radio-group [(ngModel)]="questionTwo">
+        <ion-row>
+            <ion-col>
+                <ion-item text-center class="question">
+                    <ion-label>Yes</ion-label>
+                    <br>
+                    <ion-radio mode="md" value="A"></ion-radio>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item text-center class="question">
+                    <ion-label>No</ion-label>
+                    <br>
+                    <ion-radio mode="md" value="B"></ion-radio>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-list>
+    <ion-item text-center class="button-next">
+        <button  ion-button (click)="saveQuestionInfo()">
+            <ion-icon ios="ios-arrow-dropright" md="ios-arrow-dropright"></ion-icon>
+        </button>
+    </ion-item>
+</ion-content>

@@ -16,6 +16,7 @@ import { DiagnosisPage } from '../pages/diagnosis/diagnosis';
 import { SituationPage } from '../pages/situation/situation';
 import { PrioritiesPage } from '../pages/priorities/priorities';
 import { TreatmentPage } from '../pages/treatment/treatment';
+import { InfoPage } from '../pages/info/info';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -39,6 +40,7 @@ export const firebaseConfig = {
     SurveyPage,
     ContactPage,
     HomePage,
+    InfoPage,
     TabsPage,
     
     DiagnosisPage,
@@ -58,6 +60,7 @@ export const firebaseConfig = {
     SurveyPage,
     ContactPage,
     HomePage,
+    InfoPage,
     TabsPage,
     
     DiagnosisPage,

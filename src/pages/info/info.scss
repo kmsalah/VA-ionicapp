@@ -1,0 +1,61 @@
+page-info{
+
+*{
+  color: white;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+p{
+  font-size: 20px;
+}
+
+.row .col
+{
+  text-align: center;
+}
+
+
+button 
+{
+  position: relative;
+  top: 10px;
+}
+
+ion-title
+{
+  font-weight: 900;
+}
+
+.button-inner
+{
+  font-size: 30px;
+}
+
+.button-large-ios, .button-large-md
+{
+  font-size: 2.5rem;
+  border-color: white;
+  border-width: 3px;
+}
+
+.toolbar-title-ios 
+{
+  text-align: left;
+  font-size: 3rem;
+}
+
+.toolbar-ios
+{
+  min-height: 59px;
+}
+}

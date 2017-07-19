@@ -12,10 +12,14 @@ page-home {
 
 img{
   margin:0;
-  border-left:3px solid #9b59b6;
-  border-bottom:3px solid #9b59b6;
+  border-left:3px solid #000080;
+  border-bottom:3px solid #000080;
 }
 
+*
+{
+  color:white;
+}
 img.herc{
   padding:30px;
   padding-top:0;
@@ -26,8 +30,8 @@ h3{
   padding:0;
   padding-top:20px;
   padding-right:20px;
-  border-top:3px solid #9b59b6;
-  border-right:3px solid #9b59b6;
+  border-top:3px solid #000080;
+  border-right:3px solid #000080;
 }
 
 p{
@@ -35,14 +39,16 @@ p{
   padding:20px;
   padding-bottom:0;
   text-align: left;
-  border-top:3px solid #9b59b6;
-  border-right:3px solid #9b59b6;
+  //border-top:3px solid #000080;
+  //border-right:3px solid #000080;
+  margin-bottom: 30px;
 }
 
 .row .col
 {
   text-align: center;
 }
+
 
 button 
 {
@@ -54,5 +60,30 @@ ion-title
 {
   font-weight: 900;
 }
+
+.button-inner
+{
+  font-size: 50px;
+}
+
+.button-large-ios, .button-large-md
+{
+  font-size: 3rem;
+  border-color: white;
+  border-width: 3px;
+}
+
+.toolbar-title-ios 
+{
+  text-align: left;
+  font-size: 3rem;
+}
+
+.toolbar-ios
+{
+  min-height: 59px;
+}
+
+
 
 }

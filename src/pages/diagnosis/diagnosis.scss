@@ -4,7 +4,7 @@ page-diagnosis
 ion-multi-picker 
 {
 	background-color:#6E7889;
-	color: #F3b54a;
+	color: #6495ED;
 }
 
 .label-picker
@@ -14,7 +14,7 @@ ion-multi-picker
 
 .button-next
 {
-	background-color: #393b45; //bar that button is in
+	background-color: #000080; //bar that button is in
 }
 
 .item-md .item-button, .item-ios .item-button
@@ -22,7 +22,7 @@ ion-multi-picker
 	height: 80px;
 	width: 300px;
 	font-size: 3rem;
-	background: #F3B54A; //beige
+	background: #6495ED; //beige
 
 }
 
@@ -30,7 +30,7 @@ ion-icon {
     display: inline-block;
     font-size: 2.5em;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .item-block

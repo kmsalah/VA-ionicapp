@@ -22,7 +22,10 @@
         <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.height" [multiPickerColumns]="heightColumns"></ion-multi-picker>
     </ion-item>
     <ion-item text-center class="button-next">
-        <button  ion-button (click)="saveDiagnosisInfo()">
+        <button ion-button (click)="homeButton()">
+            <ion-icon ios="ios-home" md="md-home"></ion-icon>
+        </button>
+        <button ion-button (click)="saveDiagnosisInfo()">
             <ion-icon ios="ios-arrow-dropright" md="ios-arrow-dropright"></ion-icon>
         </button>
     </ion-item>

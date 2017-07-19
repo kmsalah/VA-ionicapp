@@ -767,7 +767,15 @@ export class DiagnosisPage {
     {
         this.responseHandler.saveDiagnosisInfo(this.patientInfo);
         this.navCtrl.parent.select(1);
+    }
 
+    backButton()
+    {
+        this.navCtrl.parent.parent.pop();
+    }
+
+    homeButton(){
+        this.navCtrl.parent.parent.pop();
     }
 
 } //end of class

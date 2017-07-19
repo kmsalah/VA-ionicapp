@@ -13,64 +13,46 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+.content-md , .content-ios
+{
+    background-color:#7EB6FF;
+}
 .tabs-ios .tabbar, .tabs-md .tabber
 {
-    background-color: #393b45;
+    background-color: #000080;
 }
 
 
-.tabs-md .tab-button[aria-selected=true] {
-    color: black;
-    background:  #F3b54a; //yellow
+.tabs-md .tab-button[aria-selected=true] , .tabs-ios .tab-button[aria-selected=true] {
+    color: white;
+    background: #7EB6FF; //light blue
     /* your background color*/
     font-weight: bolder;
     font-family: "Century Gothic", "Avenir Next", "Helvetica";
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
-.tabs-md .tab-button {
+.tabs-md .tab-button, .tabs-ios .tab-button {
     min-height: 10.6rem;
     font-weight: bold;
     font-family: "Century Gothic" , "Avenir Next", "Helvetica";
     padding: 0;
     border-left: 1px;
     border-right: 1px;
-    background:#393b45;
+    background:#000080; //dark navy
     color: white;
     font-size: 2.5rem;
 }
 
-.tabs-md .tab-button-text {
-    font-size: 2.3rem;
+.tabs-md .tab-button-text, .tabs-ios .tab-button-text{
+    font-size: 2.6rem;
     font-family: "Century Gothic", "Avenir Next", "Helvetica";
     font-weight: bold;
 }
 
-.tabs-ios .tab-button[aria-selected=true] {
-    color: white;
-    background:  #F3b54a; 
-    /* your background color*/
-    font-weight: bolder;
-    font-family: "Helvetica";
-    font-size: 2rem;
-}
 
-.tabs-ios .tab-button {
-    min-height: 10.6rem;
-    font-weight: bold;
-    font-family: "Century Gothic", "Avenir Next", "Helvetica";
-    padding: 0;
-    border-left: 1px;
-    border-right: 1px;
-    background: #393b45;
-    color: white;
-    font-size: 2.5rem;
-}
-
-.tabs-ios .tab-button-text {
-    font-size: 2.8rem;
-    font-family: "Century Gothic", "Avenir Next", "Helvetica";
-    font-weight: bold;
+.tabs-ios .tab-button.has-title-only .tab-button-text { //text in tab
+font-size: 2.6rem;
 }
 
 .tabs-ios[tabsLayout=icon-hide] .tab-button,

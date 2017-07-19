@@ -30,4 +30,15 @@ export class SituationPage
         this.responseHandler.saveQuestionOneInfo(this.questionOne);
         this.navCtrl.parent.select(2);
     }
+
+    backButton()
+    {
+        console.log("back");
+        this.navCtrl.parent.select(0);
+    }
+
+    homeButton()
+    {
+        this.navCtrl.parent.parent.pop();
+    }
 }//end class

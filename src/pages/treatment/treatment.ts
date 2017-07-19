@@ -53,4 +53,15 @@ export class TreatmentPage
   alert.present();
 }
 
+
+backButton()
+{
+  this.navCtrl.parent.select(2);
+}
+
+homeButton()
+{
+  this.navCtrl.parent.parent.pop();
+}
+
 }//end class

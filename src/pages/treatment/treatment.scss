@@ -1,0 +1,63 @@
+page-treatment
+{
+	
+	h4
+	{
+		font-weight: bold;
+		color: white;
+		font-size: 2.5rem;
+	}
+
+	.subheader
+	{
+		text-align: center;
+	}
+
+	.option
+	{
+		height: 60px;
+		font-size: 2rem;
+	}
+
+	.textbox-header
+	{
+	color: white;
+	font-weight: bold;
+	font-size: 1.5rem;
+	}
+
+
+	.button-next {
+        background-color: #000080; //bar that button is in
+        height: 130px;
+    }
+
+    .textarea
+    {
+    	margin-bottom: 0;
+    }
+
+    .list-ios .item-block .item-inner //to get the bottom bar to be full on ion-item
+    {
+        border-bottom: 0;
+    }
+
+    .item-ios.item-block .item-inner
+    {
+        border-bottom: 0;
+    }
+
+    .item-md .item-button, .item-ios .item-button { //nav buttons
+        height: 100px;
+        width: 300px;
+        font-size: 3rem;
+        position:relative;
+        color: white;
+    }
+
+    ion-icon {
+        display: inline-block;
+        font-size: 2.5em;
+        //font-weight: bold;
+    }
+}

@@ -29,4 +29,16 @@ export class PrioritiesPage
         this.responseHandler.saveQuestionTwoInfo(this.questionTwo);
         this.navCtrl.parent.select(3);
     }
+
+     backButton()
+    {
+        console.log("back");
+        this.navCtrl.parent.select(1);
+    }
+
+    homeButton()
+    {
+        this.navCtrl.parent.parent.pop();
+    }
+
 }//end class

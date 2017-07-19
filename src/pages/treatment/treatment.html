@@ -1,44 +1,47 @@
 <ion-content>
-
-<div class="header">
-  <h4 >What are some of the things that are most important to you about a shared decision making tool?</h4>
-            <h5 >Please check all that apply:</h5>
-            </div>
-            <ion-list>
-                <ion-item>
-                    <ion-label>Get more information about my options for treatment</ion-label>
-                    <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionA"></ion-checkbox>
-                </ion-item>
-                <ion-item>
-                    <ion-label>Get details about side effects</ion-label>
-                    <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionB"></ion-checkbox>
-                </ion-item>
-                <ion-item>
-                    <ion-label>Get a personalized treatment plan based on my medical history and priorities (such as not feeling dizzy, not losing sleep, not taking too many pills, etc)</ion-label>
-                    <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionC"></ion-checkbox>
-                </ion-item>
-                <ion-item>
-                    <ion-label>Share information about my priorities with my provider</ion-label>
-                    <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionD"></ion-checkbox>
-                </ion-item>
-                <ion-item>
-                    <ion-label>Other
-                    </ion-label>
-                    <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionE"></ion-checkbox>
-                </ion-item>
-            </ion-list>
-            <ion-item>
-                <ion-label floating>If you checked other, please specify what other things would be important for you in a shared decision making tool?
-                </ion-label>
-                <ion-textarea [(ngModel)]="treatmentResponse.comments"></ion-textarea>
-            </ion-item>
-            <ion-row>
-            <ion-col>
-            <button ion-button (click)="saveQuestionInfo()">
-                Complete Survey
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
-            </button>
-            </ion-col>
-            </ion-row>
-            
+    <div class="header">
+        <h4>What are some of the things that are most important to you about a shared decision making tool?</h4>
+        <h4 class="subheader">Please check all that apply:</h4>
+    </div>
+    <ion-list>
+        <ion-item class="option">
+            <ion-label>Get more information about my options for treatment</ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionA"></ion-checkbox>
+        </ion-item>
+        <ion-item class="option">
+            <ion-label>Get details about side effects</ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionB"></ion-checkbox>
+        </ion-item>
+        <ion-item class="option">
+            <ion-label>Get a personalized treatment plan based on my medical history and priorities (such as not feeling dizzy, not losing sleep, not taking too many pills, etc)</ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionC"></ion-checkbox>
+        </ion-item>
+        <ion-item class="option">
+            <ion-label>Share information about my priorities with my provider</ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionD"></ion-checkbox>
+        </ion-item>
+        <ion-item class="option">
+            <ion-label>Other
+            </ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionE"></ion-checkbox>
+        </ion-item>
+        <ion-label class="textbox-header">If you checked other, please specify what other things would be important for you in a shared decision making tool?
+        </ion-label>
+        <ion-item>
+            <ion-textarea class="textarea" placeholder="Please type here..." [(ngModel)]="treatmentResponse.comments"></ion-textarea>
+        </ion-item>
+    </ion-list>
+    <ion-item text-center class="button-next">
+        <button ion-button (click)="backButton()">
+            <ion-icon ios="ios-arrow-dropleft" md="ios-arrow-dropleft"></ion-icon>
+        </button>
+        <button ion-button (click)="homeButton()">
+            <ion-icon ios="ios-home" md="md-home"></ion-icon>
+        </button>
+        <button ion-button (click)="saveQuestionInfo()">
+        Complete
+        <br>
+            <ion-icon ios="ios-checkmark-circle" md="ios-arrow-dropright"></ion-icon>
+        </button>
+    </ion-item>
 </ion-content>

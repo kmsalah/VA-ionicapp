@@ -7,13 +7,14 @@
     <ion-list radio-group [(ngModel)]="questionOne">
         <ion-row>
             <ion-col>
-                <ion-item text-center class="question" color= "primary">
+                <ion-item text-center class="question">
                     <ion-label>4 pills of drug A taken once a day
                         <br> AND
                         <br> A steroid taken twice a day</ion-label>
                     <br>
-                    <ion-radio mode="md" value="A"></ion-radio>
-                </ion-item>
+                   
+                </ion-item> 
+                <ion-item text-center class="option"><ion-radio mode="md" value="A"></ion-radio></ion-item>
             </ion-col>
             <ion-col>
                 <ion-item text-center class="question">
@@ -21,8 +22,9 @@
                         <br> AND
                         <br> Feeling dizzy</ion-label>
                     <br>
-                    <ion-radio mode="md" value="B"></ion-radio>
+                    
                 </ion-item>
+                <ion-item text-center class="option"><ion-radio mode="md" value="B"></ion-radio></ion-item>
             </ion-col>
         </ion-row>
     </ion-list>

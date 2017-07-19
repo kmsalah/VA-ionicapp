@@ -22,8 +22,8 @@ $app-direction: ltr;
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
 
- $font-family-ios-base :"Century Gothic",  "Avenir Next", "Helvetica";
- $font-family-md-base: "Century Gothic" , "Avenir Next" ,"Helvetica";
+ $font-family-ios-base :"Avenir Next", "Helvetica";
+ $font-family-md-base:  "Avenir Next" ,"Helvetica";
  $font-family-wp-base: "Helvetica";	 
 
 
@@ -36,8 +36,8 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #6495ED,
-  secondary:  #000080,
+  primary:   #BCD2EE,
+  secondary:  #5190ED,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222

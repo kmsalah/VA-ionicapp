@@ -3,13 +3,13 @@ page-diagnosis
 	
 ion-multi-picker 
 {
-	background-color:#6E7889;
-	color: #6495ED;
+	color: black;
+
 }
 
 .label-picker
 {
-	background-color: #6E7889;
+	background-color: white; //color of the data bars
 }
 
 .button-next
@@ -22,14 +22,16 @@ ion-multi-picker
 	height: 80px;
 	width: 300px;
 	font-size: 3rem;
-	background: #6495ED; //beige
-
+	//background: #9BC4E2; //light blue
+	//background: white;
+	position: relative;
+	left: 15%;
 }
 
 ion-icon {
-    display: inline-block;
+    
     font-size: 2.5em;
-    font-weight: bold;
+    //font-weight: bold;
     color: white;
 }
 
@@ -43,7 +45,7 @@ ion-icon {
 ion-label
 {
 	font-size: 2.5rem;
-	color: white;
+	color: black;
 }
 
 h1
@@ -51,17 +53,20 @@ h1
 	font-size: 3rem;
 	font-weight: bold;
 	text-align: center;
-	color: #393b45;
+	color: white;
 }
 
-.content-md, .content-ios
-{
-	background-color: #d8d9de;
-}
 
 ion-row, ion-col
 {
 	background: #bccad6;
 }
+
+   .item-ios.item-block .item-inner
+    {
+        border-bottom: 0;
+    }
+
+
 
 }

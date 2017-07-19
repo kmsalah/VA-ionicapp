@@ -1,26 +1,30 @@
 <ion-content>
     <h1>Please fill out the information below:</h1>
-    <ion-item class="label-picker">
-        <ion-label class="">Age (years)</ion-label>
-        <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.age" [multiPickerColumns]="ageColumns">
-        </ion-multi-picker>
-    </ion-item>
-    <ion-item class="label-picker">
-        <ion-label>Race</ion-label>
-        <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.race" [multiPickerColumns]="raceColumns"> </ion-multi-picker>
-    </ion-item>
-    <ion-item class="label-picker">
-        <ion-label>PSA Level</ion-label>
-        <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.psaLevel" [multiPickerColumns]="psaColumns"> </ion-multi-picker>
-    </ion-item>
-    <ion-item class="label-picker">
-        <ion-label>Weight (lbs)</ion-label>
-        <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.weight" [multiPickerColumns]="weightColumns"> </ion-multi-picker>
-    </ion-item>
-    <ion-item class="label-picker">
-        <ion-label>Height (ft,in)</ion-label>
-        <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.height" [multiPickerColumns]="heightColumns"></ion-multi-picker>
-    </ion-item>
+    <div class="questions">
+        <ion-list>
+            <ion-item class="label-picker" color="primary">
+                <ion-label class="">Age (years)</ion-label>
+                <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.age" [multiPickerColumns]="ageColumns">
+                </ion-multi-picker>
+            </ion-item>
+            <ion-item class="label-picker">
+                <ion-label>Race</ion-label>
+                <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.race" [multiPickerColumns]="raceColumns"> </ion-multi-picker>
+            </ion-item>
+            <ion-item class="label-picker">
+                <ion-label>PSA Level</ion-label>
+                <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.psaLevel" [multiPickerColumns]="psaColumns"> </ion-multi-picker>
+            </ion-item>
+            <ion-item class="label-picker">
+                <ion-label>Weight (lbs)</ion-label>
+                <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.weight" [multiPickerColumns]="weightColumns"> </ion-multi-picker>
+            </ion-item>
+            <ion-item class="label-picker">
+                <ion-label>Height (ft,in)</ion-label>
+                <ion-multi-picker item-content placeholder="&#9660;" [(ngModel)]="patientInfo.height" [multiPickerColumns]="heightColumns"></ion-multi-picker>
+            </ion-item>
+        </ion-list>
+    </div>
     <ion-item text-center class="button-next">
         <button ion-button (click)="homeButton()">
             <ion-icon ios="ios-home" md="md-home"></ion-icon>

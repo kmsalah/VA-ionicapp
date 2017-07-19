@@ -15,38 +15,43 @@
 
 .content-md , .content-ios
 {
-    background-color:#7EB6FF;
+    background-color:#000080;
 }
 .tabs-ios .tabbar, .tabs-md .tabber
 {
-    background-color: #000080;
+    background-color: white;
 }
 
 
 .tabs-md .tab-button[aria-selected=true] , .tabs-ios .tab-button[aria-selected=true] {
     color: white;
-    background: #7EB6FF; //light blue
+    background:  #000080; //dark navy
     /* your background color*/
     font-weight: bolder;
-    font-family: "Century Gothic", "Avenir Next", "Helvetica";
+    font-family:  "Avenir Next", "Helvetica";
     font-size: 2.5rem;
 }
 
 .tabs-md .tab-button, .tabs-ios .tab-button {
     min-height: 10.6rem;
     font-weight: bold;
-    font-family: "Century Gothic" , "Avenir Next", "Helvetica";
+    font-family:  "Avenir Next", "Helvetica";
     padding: 0;
     border-left: 1px;
     border-right: 1px;
-    background:#000080; //dark navy
+    background:#BCD2EE; //light blue
     color: white;
     font-size: 2.5rem;
 }
 
+.tabs-ios[tabsPlacement=top] .tabbar
+{
+    border-bottom: 0px;
+}
+
 .tabs-md .tab-button-text, .tabs-ios .tab-button-text{
     font-size: 2.6rem;
-    font-family: "Century Gothic", "Avenir Next", "Helvetica";
+    font-family: "Avenir Next", "Helvetica";
     font-weight: bold;
 }
 
@@ -59,3 +64,16 @@ font-size: 2.6rem;
 .tabs-ios .tab-button.has-title-only {
     min-height: 120px;
 }
+
+.item-radio-checked.item-ios ion-label
+{
+    color: navy;
+}
+
+.tabs-ios .tab-button
+{
+    max-width: none; //this is  to make the tab bar the entire width of the page
+}
+
+
+

@@ -1,67 +1,102 @@
-
-<ion-header>
-</ion-header>
 <ion-content>
-    <div class="header">
-        <h4>Would you be interested in a shared decision making tool that allows you to share information with your provider about your goals for therapy and things that are important to you such as not feeling dizzy or not losing sleep at night with a medication?</h4>
-    </div>
-    <ion-list radio-group [(ngModel)]="questionOne">
-        <ion-row>
-            <ion-col>
-                <ion-item text-center class="question">
-                    <ion-label>Yes</ion-label>
-                    <br>
-                    
-                </ion-item>
-                <ion-item text-center class="option"><ion-radio mode="md" value="Yes"></ion-radio></ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item text-center class="question">
-                    <ion-label>No</ion-label>
-                    <br>
-                    
-                </ion-item>
-                <ion-item text-center class="option"><ion-radio mode="md" value="No"></ion-radio></ion-item>
-            </ion-col>
-        </ion-row>
-    </ion-list>  
+   
     <div class="header">
         <h4>If Drug A and Drug B provided the same clinical benefit, which of the following options is more acceptable to you?</h4>
     </div>
     <ion-list radio-group [(ngModel)]="questionOne">
         <ion-row>
             <ion-col>
-                <ion-item text-center class="question">
+                <ion-item text-center class="questionOne">
                     <ion-label>4 pills of drug A taken once a day
                         <br> AND
                         <br> A steroid taken twice a day</ion-label>
                     <br>
-                   
-                </ion-item> 
-                <ion-item text-center class="option"><ion-radio mode="md" value="A"></ion-radio></ion-item>
+                </ion-item>
+                <ion-item text-center class="option">
+                    <ion-radio mode="md" value="A"></ion-radio>
+                </ion-item>
             </ion-col>
             <ion-col>
-                <ion-item text-center class="question">
+                <ion-item text-center class="questionOne">
                     <ion-label>4 pills of drug B taken once a day
                         <br> AND
                         <br> Feeling dizzy</ion-label>
                     <br>
-                    
                 </ion-item>
-                <ion-item text-center class="option"><ion-radio mode="md" value="B"></ion-radio></ion-item>
+                <ion-item text-center class="option">
+                    <ion-radio mode="md" value="B"></ion-radio>
+                </ion-item>
             </ion-col>
         </ion-row>
     </ion-list>
-    <ion-item text-center class="button-next">
-        <button ion-button (click)="backButton()">
-            <ion-icon ios="ios-arrow-dropleft" md="ios-arrow-dropleft"></ion-icon>
-        </button>
-        <button ion-button (click)="homeButton()">
-            <ion-icon ios="ios-home" md="md-home"></ion-icon>
-        </button>
-        <button ion-button (click)="saveQuestionInfo()">
-            <ion-icon ios="ios-arrow-dropright" md="ios-arrow-dropright"></ion-icon>
-        </button>
-    </ion-item>
+     <div class="header">
+        <h4>Would you be interested in a shared decision making tool that allows you to share information with your provider about your goals for therapy and things that are important to you such as not feeling dizzy or not losing sleep at night with a medication?</h4>
+    </div>
+    <ion-list radio-group [(ngModel)]="questionTwo">
+        <ion-row>
+            <ion-col>
+                <ion-item text-center class="questionTwo">
+                    <ion-label>Yes</ion-label>
+                    <br>
+                </ion-item>
+                <ion-item text-center class="option">
+                    <ion-radio mode="md" value="Yes"></ion-radio>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item text-center class="questionTwo">
+                    <ion-label>No</ion-label>
+                    <br>
+                </ion-item>
+                <ion-item text-center class="option">
+                    <ion-radio mode="md" value="No"></ion-radio>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-list>
+    <div class="header">
+        <h4>What are some of the things that are most important to you about a shared decision making tool?</h4>
+        <h4 class="subheader">Please check all that apply:</h4>
+    </div>
+     <ion-list>
+        <ion-item class="option">
+            <ion-label>Get more information about my options for treatment</ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionA"></ion-checkbox>
+        </ion-item>
+        <ion-item class="option">
+            <ion-label>Get details about side effects</ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionB"></ion-checkbox>
+        </ion-item>
+        <ion-item class="option">
+            <ion-label>Get a personalized treatment plan based on my medical history and priorities (such as not feeling dizzy, not losing sleep, not taking too many pills, etc)</ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionC"></ion-checkbox>
+        </ion-item>
+        <ion-item class="option">
+            <ion-label>Share information about my priorities with my provider</ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionD"></ion-checkbox>
+        </ion-item>
+        <ion-item class="option">
+            <ion-label>Other
+            </ion-label>
+            <ion-checkbox color="primary" [(ngModel)]="treatmentResponse.questionThree.optionE"></ion-checkbox>
+        </ion-item>
+        <ion-label class="textbox-header">If you checked other, please specify what other things would be important for you in a shared decision making tool?
+        </ion-label>
+        <ion-item>
+            <ion-textarea class="textarea" placeholder="Please type here..." [(ngModel)]="treatmentResponse.comments"></ion-textarea>
+        </ion-item>
+    </ion-list>
+    <div class="nav">
+        <ion-item text-center class="button-next">
+            <button ion-button (click)="backButton()">
+                <ion-icon ios="ios-arrow-dropleft" md="ios-arrow-dropleft"></ion-icon>
+            </button>
+            <button ion-button (click)="homeButton()">
+                <ion-icon ios="ios-home" md="md-home"></ion-icon>
+            </button>
+            <button ion-button (click)="saveQuestionInfo()">
+                <ion-icon ios="ios-arrow-dropright" md="ios-arrow-dropright"></ion-icon>
+            </button>
+        </ion-item>
+    </div>
 </ion-content>
-

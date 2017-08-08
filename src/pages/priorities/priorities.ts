@@ -14,7 +14,19 @@ import { ResponseService } from '../../providers/response-service';
 export class PrioritiesPage 
 {
 
-	public questionTwo = '';
+    public treatmentResponse =
+   {
+    questionThree: {
+      optionA: false,
+      optionB: false,
+      optionC: false,
+      optionD: false,
+      optionE: false
+    },
+    comments: '',
+    questionTwo: '',
+    questionOne: ''
+   };
 
 	constructor(public navCtrl: NavController,
         private responseHandler: ResponseService)
@@ -26,7 +38,9 @@ export class PrioritiesPage
 	saveQuestionInfo() 
     {
         console.log("priorities.ts");
-        this.responseHandler.saveQuestionTwoInfo(this.questionTwo);
+        this.responseHandler.saveQuestionOneInfo(this.treatmentResponse.questionOne);
+        this.responseHandler.saveQuestionTwoInfo(this.treatmentResponse.questionTwo);
+        this.responseHandler.saveQuestionThreeInfo(this.treatmentResponse)
         this.navCtrl.parent.select(3);
     }
 

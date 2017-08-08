@@ -60,4 +60,29 @@ page-treatment
         font-size: 2.5em;
         //font-weight: bold;
     }
+
+     .item-md.item-block .item-inner, .list-ios .item-block .item-inner //to get the bottom bar to be full on ion-item
+    {
+        border-bottom: 0;
+    }
+
+    .item-ios.item-block .item-inner
+    {
+        border-bottom: 0;
+    }
+
+
+
+    ion-icon { //icon in buttons
+        display: inline-block;
+        font-size: 2.5em;
+        //font-weight: bold;
+    }
+
+
+    .label-md, .label-ios  //to get the buttons to move down
+    {
+        margin-top: 25px;
+    }
+    
 }

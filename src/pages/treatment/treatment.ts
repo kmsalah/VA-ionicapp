@@ -39,7 +39,7 @@ export class TreatmentPage
 	saveQuestionInfo() 
    {
         console.log("situation.ts");
-        this.responseHandler.saveQuestionThreeInfo(this.treatmentResponse);
+        //this.responseHandler.saveQuestionThreeInfo(this.treatmentResponse);
         this.presentAlert();
         //this.navCtrl.setRoot(HomePage);
         this.navCtrl.parent.parent.pop();

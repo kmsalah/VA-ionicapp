@@ -26,8 +26,8 @@ export class SituationPage
 
 	saveQuestionInfo() 
     {
-        console.log("situation.ts");
-        this.responseHandler.saveQuestionOneInfo(this.questionOne);
+       // console.log("situation.ts");
+        //this.responseHandler.saveQuestionOneInfo(this.questionOne);
         this.navCtrl.parent.select(2);
     }
 

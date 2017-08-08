@@ -25293,101 +25293,27 @@ page-info .toolbar-ios {
   min-height: 59px;
 }
 
-page-priorities {
-  /*
-    .item-md .radio-md,
-    .item-ios .radio-ios {
-        position: absolute;
-        left: 45%;
-        top:60%;
-    }
-*/
-  /*
-    .radio-md, .radio-ios{
-        position: relative;
-        left: -50%;
-        top: 40%;
-    }
-
-    .radio-md .radio-icon, .radio-ios .radio-icon {
-        height: 40px;
-        width: 40px;
-        border-color:white;
-        position:relative;
-        top: 55px;
-    }
-
-    .radio-md .radio-inner, .radio-ios .radio-icon {
-        height: 40px;
-        width: 40px;
-        position: relative;
-        left: 22%; //to get little button in
-        top: 40%;
-    }
-*/
-}
-
-page-priorities .item-md, page-priorities .item-ios {
-  font-weight: bold;
-}
-
 page-priorities h4 {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 0rem;
   color: white;
-  margin-bottom: 5rem;
-  height: 120px;
-  padding: 25px;
+  font-weight: bold;
 }
 
 page-priorities ion-label {
   font-weight: bold;
-  font-size: 4rem;
-  height: 110px;
-  text-align: center;
-  vertical-align: middle;
 }
 
 page-priorities .button-next {
   background-color: #000080;
-  height: 150px;
-  margin-top: -2.5%;
 }
 
-page-priorities .col {
-  padding: 0px;
-  padding-left: 1px;
-}
-
-page-priorities .question {
-  color: black;
-  border-bottom: 0;
-}
-
-page-priorities .option {
-  height: 55px;
-}
-
-page-priorities .item-md .item-button, page-priorities .item-ios .item-button {
-  height: 80px;
-  width: 300px;
-  font-size: 3rem;
-  position: relative;
-  top: 20px;
+page-priorities .textbox-header {
   color: white;
-  margin: 0;
-}
-
-page-priorities ion-icon {
-  display: inline-block;
-  font-size: 2.5em;
+  font-size: 18px;
 }
 
 page-priorities .radio-md, page-priorities .radio-ios {
-  position: relative;
-  right: 47%;
+  position: relative !important;
+  right: 46% !important;
   height: 40px;
   width: 40px;
 }
@@ -25405,12 +25331,34 @@ page-priorities .radio-md .radio-inner, page-priorities .radio-ios .radio-inner 
   width: 38px;
 }
 
-page-priorities .list-ios .item-block .item-inner {
+page-priorities .item-md .item-button, page-priorities .item-ios .item-button {
+  height: 80px;
+  width: 300px;
+  font-size: 3rem;
+  position: relative;
+  color: white;
+  margin: 0;
+}
+
+page-priorities .list-ios {
+  margin-bottom: 0px;
+}
+
+page-priorities .subheader {
+  text-align: center;
+}
+
+page-priorities .item-md.item-block .item-inner, page-priorities .list-ios .item-block .item-inner {
   border-bottom: 0;
 }
 
 page-priorities .item-ios.item-block .item-inner {
   border-bottom: 0;
+}
+
+page-priorities ion-icon {
+  display: inline-block;
+  font-size: 2.5em;
 }
 
 page-situation {
@@ -25532,6 +25480,23 @@ page-situation .item-ios.item-block .item-inner {
   border-bottom: 0;
 }
 
+page-situation .item-md.item-block .item-inner, page-situation .list-ios .item-block .item-inner {
+  border-bottom: 0;
+}
+
+page-situation .item-ios.item-block .item-inner {
+  border-bottom: 0;
+}
+
+page-situation ion-icon {
+  display: inline-block;
+  font-size: 2.5em;
+}
+
+page-situation .label-md, page-situation .label-ios {
+  margin-top: 25px;
+}
+
 page-quiz .top-bar {
   background-color: black;
   height: 20px;
@@ -25598,6 +25563,23 @@ page-treatment .item-md .item-button, page-treatment .item-ios .item-button {
 page-treatment ion-icon {
   display: inline-block;
   font-size: 2.5em;
+}
+
+page-treatment .item-md.item-block .item-inner, page-treatment .list-ios .item-block .item-inner {
+  border-bottom: 0;
+}
+
+page-treatment .item-ios.item-block .item-inner {
+  border-bottom: 0;
+}
+
+page-treatment ion-icon {
+  display: inline-block;
+  font-size: 2.5em;
+}
+
+page-treatment .label-md, page-treatment .label-ios {
+  margin-top: 25px;
 }
 
 .ion-ios-add:before {

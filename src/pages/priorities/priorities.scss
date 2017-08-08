@@ -1,111 +1,31 @@
-page-priorities {
 
-
-    
-    .item-md, .item-ios{
-        font-weight: bold;
-    }
-
+page-priorities
+{
     h4 {
-        font-size: 3rem;
+        color:white;
         font-weight: bold;
-        text-align: center;
-        margin-top: 0rem;
+    }
+
+    ion-label 
+    {
+        font-weight: bold; //font of the item boxes, inherti from ion-label for some reason
+    }
+
+    .button-next //bar that the buttons are in
+    {
+        background-color: #000080;
+    }
+
+    .textbox-header //question about textarea
+    {
         color: white;
-        margin-bottom: 5rem;
-        height: 120px;
-        padding: 25px;
+        font-size: 18px;
     }
-
-
-    .header {
-        //background-color: #d8d9de;
-    }
-
-    ion-label {
-        font-weight: bold;
-        font-size: 4rem;
-        height: 110px;
-        text-align: center;
-        vertical-align: middle;
-    }
-
-    .button-next {
-        background-color: #000080; //bar that button is in
-        height: 150px;
-        margin-top: -2.5%;
-    }
-
-    .col {
-        padding: 0px;
-        padding-left: 1px;
-    }
-
-/*
-    .item-md .radio-md,
-    .item-ios .radio-ios {
-        position: absolute;
-        left: 45%;
-        top:60%;
-    }
-*/
-    .question {
-        //background-color: #F0F8FF;
-        color:black;
-        border-bottom: 0;
-    }
-
-    .option{
-        //background-color: #F0F8FF;
-        height: 55px;
-    }
-
-    /*
-    .radio-md, .radio-ios{
-        position: relative;
-        left: -50%;
-        top: 40%;
-    }
-
-    .radio-md .radio-icon, .radio-ios .radio-icon {
-        height: 40px;
-        width: 40px;
-        border-color:white;
-        position:relative;
-        top: 55px;
-    }
-
-    .radio-md .radio-inner, .radio-ios .radio-icon {
-        height: 40px;
-        width: 40px;
-        position: relative;
-        left: 22%; //to get little button in
-        top: 40%;
-    }
-*/
-
-    .item-md .item-button, .item-ios .item-button { //nav buttons
-        height: 80px;
-        width: 300px;
-        font-size: 3rem;
-        position:relative;
-        top: 20px;
-        color: white;
-        margin: 0;
-    }
-
-
-    ion-icon {
-        display: inline-block;
-        font-size: 2.5em;
-        //font-weight: bold;
-    }
-
 
     .radio-md, .radio-ios //controls entire button i think
     {
-        position: relative;
-        right: 47%;
+        position: relative !important;
+        right: 46% !important;
         height: 40px;
         width: 40px;
     }
@@ -116,7 +36,6 @@ page-priorities {
         width: 40px; 
     }
 
-
     .radio-md .radio-inner, .radio-ios .radio-inner //inside of button when check
     {
         position:absolute;
@@ -126,9 +45,26 @@ page-priorities {
         width: 38px
     }
 
+    .item-md .item-button, .item-ios .item-button { //nav buttons
+        height: 80px;
+        width: 300px;
+        font-size: 3rem;
+        position:relative;
+        color: white;
+        margin: 0;
+    }
 
+    .list-ios
+    {
+        margin-bottom: 0px; //to get the space between the buttons and the text area to be smaller
+    }
 
-    .list-ios .item-block .item-inner //to get the bottom bar to be full on ion-item
+    .subheader
+    {
+        text-align:center;
+    }
+
+     .item-md.item-block .item-inner, .list-ios .item-block .item-inner //to get the bottom bar to be full on ion-item
     {
         border-bottom: 0;
     }
@@ -137,4 +73,13 @@ page-priorities {
     {
         border-bottom: 0;
     }
+
+
+
+    ion-icon { //icon in buttons
+        display: inline-block;
+        font-size: 2.5em;
+        //font-weight: bold;
+    }
+
 }

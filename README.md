@@ -13,3 +13,10 @@ First download and then from CLI:
 $ionic serve
 ```
 
+#### Some sample screenshots:
+![homescreen](app2-Screenshots/IMG_0001.PNG)
+![disclaimer](app2-Screenshots/IMG_0002.PNG)
+![age](app2-Screenshots/IMG_0003.PNG)
+![income](app2-Screenshots/IMG_0004.PNG)
+![aware](app2-Screenshots/IMG_0008.PNG)
+![options](app2-Screenshots/IMG_0014.PNG)
